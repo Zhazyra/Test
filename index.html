@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="warning hidden">NO QUESTIONS</div>
+        <div class="quiz hidden">
+          <div
+            class="pl-8 pr-8 pt-8 pb-1 border-b-2 border-slate-300 flex flex-row justify-between"
+          >
+            <div class="quiz__total"></div>
+            <div class="w-32 h-7 bg-blue-100 rounded-3xl p-1">
+              <img src="./Assets/timer-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="quiz__progress">
+            <div class="quiz__progress-inner"></div>
+          </div>
+          <div class="quiz__content">
+            <h3 class="quiz__title"></h3>
+            <ul class="quiz__list"></ul>
+          </div>
+          <div class="quiz__footer pr-8 flex justify-end">
+            <button class="quiz__next-btn w-24">Next</button>
+          </div>
+        </div>
+        <div class="result hidden">
+          <div class="result__title">You have completed the test!</div>
+          <div class="result__text"></div>
+          <div class="result__btn">
+            <button class="result__restart">Restart</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/questions.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
